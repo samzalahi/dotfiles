@@ -11,7 +11,8 @@ source ~/.local/share/omarchy/default/bash/rc
 # alias cx="claude --permission-mode=plan --allow-dangerously-skip-permissions"
 
 # --- EASY NAVIGATION ---
-#alias home='cd ~/'
+alias wp='cd /run/media/mz/Data/Workspace/'
+alias home='cd ~'
 
 # ---Modified Commands ---
 alias la='ls -a'
