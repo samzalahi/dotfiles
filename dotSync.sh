@@ -2,7 +2,7 @@
 
 # Configuration
 DOTFILES_DIR="$HOME/dotfiles"
-BACKUP_DIR="$HOME/omarchy_defaults_backup"
+BACKUP_DIR="$HOME/default_dotfiles_backup"
 
 # Ensure directories exist
 mkdir -p "$BACKUP_DIR"
