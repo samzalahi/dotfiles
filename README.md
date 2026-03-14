@@ -47,22 +47,22 @@ To apply all configurations at once:
 stow */
 ```
 
-## 4. Handling Conflicts
+## 4. Handling Conflicts on OS Fresh Install 
 
-If you have existing configuration files, `stow` might fail. You can either:
+If you have existing configuration files, `stow` might fail. So you have to **Move** the existing files and run `stow` again:
 
-1. **Delete or move** the existing files and run `stow` again.
-2. Use the **adopt** flag to incorporate existing files into the dotfiles repository(Recommended):
+Run the **dotSync.sh** to move the existing files into backup .config folder:
 
 ```bash
-# Adopt the files: This moves existing config files into your dotfiles repo 
-# (replacing your versions locally) and creates the symlinks.
-stow --adopt *
+# Make it executable:
+chmod +x dotSync.sh
 
-# Inspect differences: Use this to see what defaults changed in your repo.
-git diff
+# To move your dotfiles (and safely backup defaults):
+./dotSync.sh move
 
-# Overwrite with your repo: If you want your original repo's settings, 
-# discard the adopted changes.
-git reset --hard
+# Run stow to symlink your dotfiles:
+stow */
+
+# To wipe your custom configs and go back to stock configs:
+./dotSync.sh restore
 ```
