@@ -49,7 +49,7 @@ stow */
 
 ## 4. Handling Conflicts on OS Fresh Install 
 
-If you have existing configuration files, `stow` might fail. So you have to **Move** the existing files and run `stow` again:
+If you have existing configuration files, `stow` might fail. So you have to **move** the existing files and run `stow` again:
 
 Run the **dotSync.sh** to move the existing files into backup .config folder:
 
