@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-DOTFILES_DIR="$HOME/dotfiles"
+DOTFILES_DIR="$HOME/repos/dotfiles"
 BACKUP_DIR="$HOME/default_dotfiles_backup"
 
 # Ensure directories exist

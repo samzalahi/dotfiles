@@ -29,7 +29,7 @@ Clone this repository to your home directory:
 
 ```bash
 cd ~
-git clone https://github.com/yourusername/dotfiles.git
+git clone https://github.com/samzalahi/dotfiles.git
 cd dotfiles
 ```
 
@@ -40,6 +40,11 @@ To apply a specific configuration, run `stow` followed by the directory name:
 ```bash
 stow hyperland
 ```
+If the dotifles folder not in the $HOME directory:
+
+```bash
+stow -t "$HOME/your dotfiles folder directory" hyperland
+```
 
 To apply all configurations at once:
 
@@ -47,9 +52,9 @@ To apply all configurations at once:
 stow */
 ```
 
-## 4. Handling Conflicts on OS Fresh Install 
+## 4. Handling Conflicts
 
-If you have existing configuration files, `stow` might fail. So you have to **move** the existing files and run `stow` again:
+If you have existing default/custom config files, `stow` might fail. So you have to **move** the existing files and run `stow` again:
 
 Run the **dotSync.sh** to move the existing files into backup .config folder:
 
