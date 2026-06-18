@@ -23,7 +23,6 @@
     "group/tray-expander",
     "bluetooth",
     "network",
-    "custom/vpn",
     "pulseaudio",
     "cpu",
     "battery"
@@ -225,20 +224,5 @@
   "tray": {
     "icon-size": 12,
     "spacing": 17
-  },
-  "custom/vpn": {
-    "format": "{icon}",
-    "format-icons": {
-      "default": "",
-      "none": "󰻌",
-      "connected": "󰦝",
-      "disconnected": "󰦞"
-    },
-    "interval": 3,
-    "return-type": "json",
-    "exec": "$HOME/.config/waybar/scripts/vpn-status.sh",
-    "on-click": "$HOME/.config/waybar/scripts/vpn-toggle.sh",
-    "on-click-right": "omarchy-launch-floating-terminal-with-presentation $HOME/.config/waybar/scripts/vpn-select.sh",
-    "signal": 8
   }
 }
